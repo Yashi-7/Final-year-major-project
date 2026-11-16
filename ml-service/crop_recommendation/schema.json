@@ -1,0 +1,63 @@
+{
+  "_comment": "Single source of truth for the Flask crop-recommendation input contract. backend/src/config/cropRecommendationSchema.js and frontend/src/config/cropRecommendationFields.js must match this file; run `node scripts/check-schema-sync.mjs` from the project root to verify.",
+  "numericFields": [
+    {
+      "name": "nitrogen",
+      "column": "soil_nitrogen_N",
+      "unit": "",
+      "min": 0,
+      "max": 300
+    },
+    {
+      "name": "phosphorus",
+      "column": "soil_phosphorus_P",
+      "unit": "",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "potassium",
+      "column": "soil_potassium_K",
+      "unit": "",
+      "min": 0,
+      "max": 300
+    },
+    {
+      "name": "ph",
+      "column": "soil_pH",
+      "unit": "",
+      "min": 3,
+      "max": 10
+    },
+    {
+      "name": "temperature",
+      "column": "avg_temp_c",
+      "unit": "°C",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "rainfall",
+      "column": "total_rainfall_mm",
+      "unit": "mm",
+      "min": 0,
+      "max": 6000
+    },
+    {
+      "name": "humidity",
+      "column": "avg_humidity_percent",
+      "unit": "%",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "seasons": [
+    "Kharif",
+    "Rabi",
+    "Summer",
+    "Whole Year",
+    "Winter",
+    "Autumn"
+  ],
+  "topN": 5
+}

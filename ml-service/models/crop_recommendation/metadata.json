@@ -1,0 +1,261 @@
+{
+  "modelType": "RandomForestClassifier",
+  "trainedAt": "2026-09-30T05:34:56+00:00",
+  "sklearnVersion": "1.8.0",
+  "numpyVersion": "2.5.3",
+  "featureOrder": [
+    "nitrogen",
+    "phosphorus",
+    "potassium",
+    "ph",
+    "temperature",
+    "rainfall",
+    "humidity",
+    "season:Kharif",
+    "season:Rabi",
+    "season:Summer",
+    "season:Whole Year",
+    "season:Winter",
+    "season:Autumn"
+  ],
+  "seasons": [
+    "Kharif",
+    "Rabi",
+    "Summer",
+    "Whole Year",
+    "Winter",
+    "Autumn"
+  ],
+  "crops": [
+    {
+      "name": "Arecanut",
+      "slug": "arecanut"
+    },
+    {
+      "name": "Arhar / Tur (Pigeon Pea)",
+      "slug": "arhar-tur-pigeon-pea"
+    },
+    {
+      "name": "Bajra",
+      "slug": "bajra"
+    },
+    {
+      "name": "Banana",
+      "slug": "banana"
+    },
+    {
+      "name": "Barley",
+      "slug": "barley"
+    },
+    {
+      "name": "Black Pepper",
+      "slug": "black-pepper"
+    },
+    {
+      "name": "Cashew Nut",
+      "slug": "cashew-nut"
+    },
+    {
+      "name": "Castor Seed",
+      "slug": "castor-seed"
+    },
+    {
+      "name": "Coconut",
+      "slug": "coconut"
+    },
+    {
+      "name": "Coriander",
+      "slug": "coriander"
+    },
+    {
+      "name": "Cotton",
+      "slug": "cotton"
+    },
+    {
+      "name": "Cowpea (Lobia)",
+      "slug": "cowpea-lobia"
+    },
+    {
+      "name": "Dry Chillies",
+      "slug": "dry-chillies"
+    },
+    {
+      "name": "Garlic",
+      "slug": "garlic"
+    },
+    {
+      "name": "Ginger",
+      "slug": "ginger"
+    },
+    {
+      "name": "Gram",
+      "slug": "gram"
+    },
+    {
+      "name": "Groundnut",
+      "slug": "groundnut"
+    },
+    {
+      "name": "Guar Seed",
+      "slug": "guar-seed"
+    },
+    {
+      "name": "Horse Gram",
+      "slug": "horse-gram"
+    },
+    {
+      "name": "Jowar",
+      "slug": "jowar"
+    },
+    {
+      "name": "Jute",
+      "slug": "jute"
+    },
+    {
+      "name": "Khesari",
+      "slug": "khesari"
+    },
+    {
+      "name": "Linseed",
+      "slug": "linseed"
+    },
+    {
+      "name": "Maize",
+      "slug": "maize"
+    },
+    {
+      "name": "Masoor",
+      "slug": "masoor"
+    },
+    {
+      "name": "Mesta",
+      "slug": "mesta"
+    },
+    {
+      "name": "Moong (Green Gram)",
+      "slug": "moong-green-gram"
+    },
+    {
+      "name": "Niger Seed",
+      "slug": "niger-seed"
+    },
+    {
+      "name": "Onion",
+      "slug": "onion"
+    },
+    {
+      "name": "Peas & Beans (Pulses)",
+      "slug": "peas-beans-pulses"
+    },
+    {
+      "name": "Potato",
+      "slug": "potato"
+    },
+    {
+      "name": "Ragi",
+      "slug": "ragi"
+    },
+    {
+      "name": "Rapeseed & Mustard",
+      "slug": "rapeseed-mustard"
+    },
+    {
+      "name": "Rice",
+      "slug": "rice"
+    },
+    {
+      "name": "Safflower",
+      "slug": "safflower"
+    },
+    {
+      "name": "Sesamum",
+      "slug": "sesamum"
+    },
+    {
+      "name": "Small Millets",
+      "slug": "small-millets"
+    },
+    {
+      "name": "Soybean",
+      "slug": "soybean"
+    },
+    {
+      "name": "Sugarcane",
+      "slug": "sugarcane"
+    },
+    {
+      "name": "Sunflower",
+      "slug": "sunflower"
+    },
+    {
+      "name": "Sunn Hemp",
+      "slug": "sunn-hemp"
+    },
+    {
+      "name": "Sweet Potato",
+      "slug": "sweet-potato"
+    },
+    {
+      "name": "Tapioca",
+      "slug": "tapioca"
+    },
+    {
+      "name": "Tobacco",
+      "slug": "tobacco"
+    },
+    {
+      "name": "Turmeric",
+      "slug": "turmeric"
+    },
+    {
+      "name": "Urad (Black Gram)",
+      "slug": "urad-black-gram"
+    },
+    {
+      "name": "Wheat",
+      "slug": "wheat"
+    }
+  ],
+  "trainingRows": 316920,
+  "topN": 3,
+  "trainingRanges": {
+    "nitrogen": [
+      50.0,
+      150.0
+    ],
+    "phosphorus": [
+      15.0,
+      55.0
+    ],
+    "potassium": [
+      20.0,
+      50.0
+    ],
+    "ph": [
+      5.5,
+      8.0
+    ],
+    "temperature": [
+      6.26,
+      28.63
+    ],
+    "rainfall": [
+      249.24,
+      5244.36
+    ],
+    "humidity": [
+      34.47,
+      86.06
+    ]
+  },
+  "sourceDataset": "district_agriculture_ml_ready.csv",
+  "holdoutMetrics": {
+    "precision_at_3": 0.7938,
+    "hit_at_3": 0.9934,
+    "baseline_precision_at_3": 0.6528,
+    "baseline_hit_at_3": 0.9438,
+    "heldout_conditions": 10228,
+    "heldout_districts": 151,
+    "note": "Whole districts held out; baseline = most common crops of the season."
+  }
+}

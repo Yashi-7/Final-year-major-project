@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+ml-service/venv/
+ml-service/__pycache__/
+
+# Environment variables
+.env
+.env.local
+
+# Build output
+frontend/dist/
+frontend/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+*.pyc
+__pycache__/
+*.egg-info/
+
+# Editor
+.vscode/
+.idea/

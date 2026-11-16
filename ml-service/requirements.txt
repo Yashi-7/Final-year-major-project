@@ -1,0 +1,9 @@
+# Runtime dependencies. The bundled model artifact was trained with the
+# scikit-learn/numpy versions below (Python 3.11+). If your versions differ,
+# retrain: python training/train_crop_recommendation.py
+Flask==3.0.3
+flask-cors==4.0.1
+python-dotenv==1.0.1
+numpy>=2.1,<3
+scikit-learn==1.8.0
+joblib>=1.4

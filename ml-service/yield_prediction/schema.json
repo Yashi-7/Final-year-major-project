@@ -1,0 +1,6 @@
+{
+  "_comment": "Input contract for Flask yield prediction. backend/src/config/yieldPredictionSchema.js and frontend/src/config/yieldPredictionFields.js must match; verify with `node scripts/check-schema-sync.mjs`. Only these four features are ever used: production and area are NOT inputs (yield = production / area, so they would leak the target).",
+  "features": ["state", "season", "crop", "year"],
+  "year": { "min": 1997, "max": 2030 },
+  "maxTextLength": 100
+}
